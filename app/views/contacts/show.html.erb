@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<div class="container">
+<h1>Display record for <strong><%= @contact.name %></strong></h1>
+<br>
+
+<table class="table">
+  <tbody>
+    <tr>
+      <th class="thead-dark" scope="row">Name</th>
+      <td><%= @contact.name %></td>
+    </tr>
+    <tr>
+      <th class="thead-dark" scope="row">Address</th>
+      <td><%= @contact.address %></td>
+    </tr>
+    <tr>
+      <th class="thead-dark" scope="row">Address</th>
+      <td><%= @contact.city %></td>
+    </tr>
+    <tr>
+      <th class="thead-dark" scope="row">State</th>
+      <td><%= @contact.state %></td>
+    </tr>
+    <tr>
+      <th class="thead-dark" scope="row">Phone</th>
+      <td><%= @contact.phone %></td>
+    </tr>
+    <tr>
+      <th class="thead-dark" scope="row">Age</th>
+      <td><%= @contact.age %></td>
+    </tr>
+  </tbody>
+</table>
+
+  <%= link_to 'Back', contacts_path, class: "btn btn-secondary" %> |
+  <%= link_to 'Edit', edit_contact_path(@contact), class: "btn btn-info" %>
+  
+</div>
